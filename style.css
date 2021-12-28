@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background: rgb(42, 29, 46);
+    position: relative;
+}
+
+#stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mountain{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.main .countdown-wrapper{
+    z-index: 99;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.main .countdown-wrapper #title{
+    color: #fff;
+    padding: 50px 0;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.main .countdown-wrapper .countdown{
+    display: flex;
+    justify-content: space-between;
+
+}
+.main .countdown-wrapper .countdown .h{
+    background: linear-gradient(180deg, #1C1C38 0%, #34364F 99.02%);
+    height: 110px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FB5E85;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.main .countdown-wrapper .countdown .d{
+    text-align: center;
+    padding: 20px 20px;
+    color: #8E8DAA;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 634px) {
+    .main .countdown-wrapper{
+        z-index: 99;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    .main .countdown-wrapper .countdown{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .main .countdown-wrapper .countdown .h{
+        background: linear-gradient(180deg, #1C1C38 0%, #34364F 99.02%);
+        height: 70px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FB5E85;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+    }
+    .main .countdown-wrapper .countdown .h{
+        font-size: 30px;
+    }
+    .main .countdown-wrapper .countdown .d{
+        font-size: 15px;
+        padding:20px 0;
+
+    }
+}
+@media screen and (max-width: 393px) {
+    .main .countdown-wrapper{
+        z-index: 99;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+    .main .countdown-wrapper .countdown .h{
+        background: linear-gradient(180deg, #1C1C38 0%, #34364F 99.02%);
+        height: 60px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FB5E85;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+    }
+    .main .countdown-wrapper .countdown .h{
+        font-size: 26px;
+    }
+    .main .countdown-wrapper .countdown .d{
+        font-size: 12px;
+        padding:20px 0;
+
+    }
+}
+@media screen and (max-width: 300px) {
+    .main .countdown-wrapper{
+        z-index: 99;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+    .main .countdown-wrapper .countdown .h{
+        background: linear-gradient(180deg, #1C1C38 0%, #34364F 99.02%);
+        height: 60px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FB5E85;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+    }
+    .main .countdown-wrapper .countdown .h{
+        font-size: 26px;
+    }
+    .main .countdown-wrapper .countdown .d{
+        font-size: 12px;
+        padding:20px 0;
+
+    }
+}
